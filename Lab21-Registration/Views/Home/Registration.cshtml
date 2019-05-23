@@ -11,7 +11,7 @@
 
 <form style="bodytext" action="Welcome" method="get">
     <h3>User Information</h3>
-    <p>User Name: <input type="text" name="UserName" required /></p>
+    <p>User Name: <input type="text" name="UserName"  /></p>
     <p>Password: <input type="password" name="Password"  /></p>
     <p>Reenter Password: <input type="password" name="Password2"  /></p>
     <h3>Personal Information</h3>
@@ -21,10 +21,8 @@
     <p>City: <input type="text" name="City"  /></p>
     <p>State: <input type="text" name="State"  /></p>
     <p>ZIP Code: <input type="number" name="ZipCode"  /></p>
-    <p>Email: <input type="email" name="Email"  /></p> 
-    <p>Phone Number: <input type="text" name="Phone"  /></p>
-
-
+    <p>Email: <input pattern="^[A-Za-z0-9._%+-]+@("@")[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" type="email" name="Email"  /></p> 
+    <p>Phone Number: <input pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" type="text" name="Phone"  /></p>
 
     <input type="submit" />
 </form>

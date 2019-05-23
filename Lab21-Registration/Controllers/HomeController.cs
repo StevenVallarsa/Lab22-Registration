@@ -38,8 +38,12 @@ namespace Lab21_Registration.Controllers
         public ActionResult Welcome(NewUser newUser)
         {
             ViewBag.UserName = newUser.UserName;
+            ViewBag.FirstName = newUser.FirstName;
+            ViewBag.LastName = newUser.LastName;
+            ViewBag.City = newUser.City;
+            ViewBag.State = newUser.State;
 
-            return View();
+            return View(newUser);
         }
     }
 }
